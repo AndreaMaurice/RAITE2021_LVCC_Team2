@@ -20,14 +20,13 @@ class AgencyController extends Controller
     {
         $crewmates=Crewmate::all();
         $ranks=Rank::all();
-        return view('assign', compact($crewmates));
+        $ships=Ships::all();
+        return view('assign', compact('crewmates', 'ranks', 'ships'));
     }
 
-
-    
     public function viewPage()
     {
         $ships=Ships::all();
-        return view('view', compact($ships));
+        return view('view', compact('ships'));
     }
 }
