@@ -20,7 +20,7 @@ class AgencyController extends Controller
     {
         $crewmates=Crewmate::all();
         $ranks=Rank::all();
-        $ships=Ships::all();
+        $ships=Ship::all();
         return view('assign', compact('crewmates', 'ranks', 'ships'));
     }
 
@@ -28,7 +28,7 @@ class AgencyController extends Controller
     {
         $crewmates=Crewmate::all();
         $ranks=Rank::all();
-        $ships=Ships::all();
+        $ships=Ship::all();
 
         
         return view('assign', compact('crewmates', 'ranks', 'ships'));
@@ -36,7 +36,7 @@ class AgencyController extends Controller
 
     public function viewPage()
     {
-        $ships=Ships::all();
+        $ships=Ship::all();
         return view('view', compact('ships'));
     }
 }

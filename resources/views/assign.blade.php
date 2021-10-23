@@ -31,8 +31,8 @@
                     <select name="" id="">
                         <option value=""></option>
                     </select>
+                    <input type="submit" value="Submit" />
                 </div>
-                <input type="submit" value="Submit" />
             </form>
         </div>
 
@@ -52,9 +52,10 @@
                     @endforeach                
                 </select>
                 <p>Speed Class</p>
-                <input type="text" >
+                <input type="text">
+                <input type="submit" value="Submit" />
             </div>
-            <input type="submit" value="Submit" />
+            
         </div>
     </body>
 </html>
