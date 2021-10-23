@@ -24,8 +24,12 @@
                 Name:
                 <input type="text" >
                 Assign Rank:
-                <select name="" id="">
-                    <option value=""></option>
+                <select name="rankName" id="">
+                    @foreach ($ranks as $rank)
+                        <option value="{{ $rank->id }}">                    
+                            {{ $rank->rank_name }}
+                        </option>
+                    @endforeach                
                 </select>
             </div>
             
