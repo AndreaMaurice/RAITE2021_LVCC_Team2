@@ -24,6 +24,16 @@ class AgencyController extends Controller
         return view('assign', compact('crewmates', 'ranks', 'ships'));
     }
 
+    public function startAssign()
+    {
+        $crewmates=Crewmate::all();
+        $ranks=Rank::all();
+        $ships=Ships::all();
+
+        
+        return view('assign', compact('crewmates', 'ranks', 'ships'));
+    }
+
     public function viewPage()
     {
         $ships=Ships::all();
