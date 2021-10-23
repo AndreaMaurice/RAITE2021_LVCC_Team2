@@ -16,6 +16,6 @@ use App\Http\Controllers\AgencyController;
 
 Route::get('/', 'App\Http\Controllers\AgencyController@index');
 
-Route::get('/', 'App\Http\Controllers\AgencyController@assignPage');
+Route::get('/assign', 'App\Http\Controllers\AgencyController@assignPage');
 
-Route::get('/', 'App\Http\Controllers\AgencyController@viewPage');
+Route::get('/view', 'App\Http\Controllers\AgencyController@viewPage');
