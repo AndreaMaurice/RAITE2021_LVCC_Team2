@@ -15,9 +15,9 @@ class CreateCrewmatesTable extends Migration
     {
         Schema::create('crewmates', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('crew_id')->constrained('crew')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('crew_id')->constrained('crew')->onDelete('cascade');
+            $table->foreignId('rank_id')->constrained('ranks')->onDelete('cascade');
             $table->string('name');
-            $table->string('rank');
             $table->timestamps();
         });
     }
