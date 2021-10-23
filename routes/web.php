@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AgencyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\TasksController@index');
+Route::get('/', 'App\Http\Controllers\AgencyController@index');
 
-Route::post('/save-task', 'App\Http\Controllers\TasksController@saveTask');
