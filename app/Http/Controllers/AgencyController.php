@@ -30,7 +30,6 @@ class AgencyController extends Controller
         $ranks=Rank::all();
         $ships=Ship::all();
 
-
         
         return view('welcome', compact('crewmates', 'ranks', 'ships'));
     }
