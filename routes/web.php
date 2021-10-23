@@ -18,4 +18,6 @@ Route::get('/', 'App\Http\Controllers\AgencyController@index');
 
 Route::get('/assign', 'App\Http\Controllers\AgencyController@assignPage');
 
+Route::post('/', 'App\Http\Controllers\AgencyController@startAssigning');
+
 Route::get('/view', 'App\Http\Controllers\AgencyController@viewPage');

@@ -43,9 +43,13 @@
             <div class="collect">
                <p>Ship Name:</p> 
                 <input type="text" >
-               <p>Assign Crews:</p> 
-                <select name="" id="">
-                    <option value=""></option>
+                Assign Rank:
+                <select name="rankName" id="">
+                    @foreach ($ranks as $rank)
+                        <option value="{{ $rank->id }}">                    
+                            {{ $rank->rank_name }}
+                        </option>
+                    @endforeach                
                 </select>
                 <p>Speed Class</p>
                 <input type="text" >
