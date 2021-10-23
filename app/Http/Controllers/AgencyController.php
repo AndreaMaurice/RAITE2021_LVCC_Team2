@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-Use App\Models\Ships;
-Use App\Models\Crewmates;
+Use App\Models\Ship;
+Use App\Models\Crewmate;
 Use App\Models\Crew;
-Use App\Models\Ranks;
+Use App\Models\Rank;
 
 
 class AgencyController extends Controller
@@ -19,6 +19,7 @@ class AgencyController extends Controller
     public function assignPage()
     {
         $crewmates=Crewmate::all();
+        $ranks=Rank::all();
         return view('assign', compact($crewmates));
     }
 
